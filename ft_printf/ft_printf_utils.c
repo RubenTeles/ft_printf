@@ -6,7 +6,7 @@
 /*   By: rteles <rteles@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 17:42:59 by rteles            #+#    #+#             */
-/*   Updated: 2022/01/08 23:54:25 by rteles           ###   ########.fr       */
+/*   Updated: 2022/01/08 23:56:27 by rteles           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ int	ft_print_int(int n)
 	int		i;
 	char	*str;
 
-	if (!n)
-		return (0);
 	str = NULL;
 	str = ft_itoa(n);
 	i = ft_print_string(str);
@@ -62,8 +60,6 @@ int	ft_print_hx(unsigned long long hx, char *base)
 	int					r;
 	unsigned long long	n;
 
-	if (!hx)
-		return (0);
 	lap = 0;
 	n = hx;
 	r = -1;

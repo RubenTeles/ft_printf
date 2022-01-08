@@ -6,7 +6,7 @@
 /*   By: rteles <rteles@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 17:45:36 by rteles            #+#    #+#             */
-/*   Updated: 2022/01/08 23:50:31 by rteles           ###   ########.fr       */
+/*   Updated: 2022/01/08 23:56:49 by rteles           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,6 @@ int	ft_print_unsigned_decimal(unsigned int un)
 	unsigned int	n;
 	char			*str;
 
-	if (!un)
-		return (0);
 	n = (unsigned int)un;
 	str = NULL;
 	str = ft_itoa_unsigned(n);
