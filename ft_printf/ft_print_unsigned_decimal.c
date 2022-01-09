@@ -6,7 +6,7 @@
 /*   By: rteles <rteles@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 17:45:36 by rteles            #+#    #+#             */
-/*   Updated: 2022/01/08 23:56:49 by rteles           ###   ########.fr       */
+/*   Updated: 2022/01/09 00:29:42 by rteles           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,6 @@ int	ft_print_unsigned_decimal(unsigned int un)
 	str = NULL;
 	str = ft_itoa_unsigned(n);
 	i = ft_print_string(str);
+	free(str);
 	return (i);
 }
