@@ -6,7 +6,7 @@
 /*   By: rteles <rteles@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 16:21:21 by rteles            #+#    #+#             */
-/*   Updated: 2022/01/08 18:58:20 by rteles           ###   ########.fr       */
+/*   Updated: 2022/01/09 00:50:15 by rteles           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_makestring(const char type, va_list args)
 	if (type == 'c')
 		len = ft_print_char(va_arg(args, int));
 	else if (type == 'p')
-		len = ft_print_hx(va_arg(args, unsigned long long), "0123456789abcdef");
+		len = ft_print_pointer(va_arg(args, unsigned long long));
 	else if (type == 's')
 		len = ft_print_string(va_arg(args, char *));
 	else if (type == 'd' || type == 'i')
