@@ -6,7 +6,7 @@
 #    By: rteles <rteles@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/05 21:17:09 by rteles            #+#    #+#              #
-#    Updated: 2022/01/08 22:50:00 by rteles           ###   ########.fr        #
+#    Updated: 2022/01/09 17:25:41 by rteles           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,12 +27,14 @@ CFLAGS	= -Wall -Wextra -Werror
 
 RM		= rm -f
 
+AR		= ar -rcs
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	@make -C $(LIBFT)
 	@cp libft/libft.a ./$(NAME)
-	@ar rc $(NAME) $(OBJS) 
+	@$(AR) $(NAME) $(OBJS) 
 	@ranlib $(NAME)
 
 .o.c:
